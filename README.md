@@ -1,4 +1,4 @@
-# Django API with Django Rest Framework and AngularJS-Resource
+# Django API with Django Rest Framework and AngularJS
 
 
 ## Setup
@@ -8,6 +8,13 @@ TODO: Add more setup options
 ### Manual
 
 You're encouraged to setup a `virtualenv` to work in prior to configuring the dependencies.
+
+    $ virtualenv -p /usr/bin/python3 venv
+
+    Activate the virtual env
+
+    $ source venv bin activate
+
 
 1. Install Python Requirements
 
