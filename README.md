@@ -16,18 +16,17 @@ Activate the virtual env
 
     source venv/bin/activate
 
-
 1. Install Python Requirements
 
-    pip install -r requirements/base.txt
+       pip install -r requirements/base.txt
 
-    python setup.py develop
+       python setup.py develop
 
 
-5. Setup the Database
+2. Setup the Database
 
-    make create_database; make make_fixtures
+       make create_database; make make_fixtures
 
-6. Run the Server
+3. Run the Server
 
-    ./manage.py runserver
+       ./manage.py runserver
