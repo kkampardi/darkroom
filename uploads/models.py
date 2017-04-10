@@ -19,8 +19,10 @@ class Upload(models.Model):
         ('published', 'Published'),
     )
 
+    title = models.CharField(max_length=200, blank=True)
+    slug = models.SlugField(max_length=50, unique=True)
     image = models.ImageField(upload_to=get_image_path)
-    status = models.Charfield(max_length=10, choices=STATUS_CHOICES, default='draft')
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
 
 
     published = PublishManager()
@@ -28,7 +30,7 @@ class Upload(models.Model):
 
     # use PIL to change the image size
     # override save function
-    def save(self, *args, *kwargs):
+    def save(self, *args, **kwargs):
         super(Upload, self).save()
 
         if self.image:
