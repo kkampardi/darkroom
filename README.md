@@ -12,7 +12,7 @@ You're encouraged to setup a `virtualenv` to work in prior to configuring the de
 
     virtualenv -p /usr/bin/python3 venv
 
-Activate the virtual env
+#### Activate the virtual env
 
     source venv/bin/activate
 
