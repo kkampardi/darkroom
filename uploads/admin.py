@@ -1,14 +1,13 @@
 from django.contrib import admin
 
-from .models import Upload
+from .models import Image
 
 # Register your models here.
 
-class UploadAdmin(admin.ModelAdmin):
-    model = Upload
-    list_display = ('title','image', 'status')
-    list_display_links = ('title',)
+class ImageAdmin(admin.ModelAdmin):
+    model = Image
+    list_display = ('title', 'slug', 'created', )
     prepopulated_fields = {'slug': ('title',)}
 
 
-admin.site.register(Upload, UploadAdmin)
+admin.site.register(Image, ImageAdmin)
