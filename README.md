@@ -25,7 +25,7 @@ You're encouraged to setup a `virtualenv` to work in prior to configuring the de
 
 2. Setup the Database
 
-       make create_database; make make_fixtures
+       make db_setup;
 
 3. Run the Server
 
