@@ -14,7 +14,7 @@ ghostdriver.log
 .harvest
 pep8.report
 .env
-*.sqlite
+*.sqlite3
 node_modules
 .vagrant
 docker-compose.yml
