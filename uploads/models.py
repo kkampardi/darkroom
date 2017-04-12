@@ -18,7 +18,7 @@ class Image(models.Model):
     )
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL,
-                             related_name='images_created')
+                             related_name='images_created', null=True)
     title = models.CharField(max_length=200, blank=True)
     slug = models.SlugField(max_length=50, unique=True)
     image = models.ImageField(upload_to='images')
