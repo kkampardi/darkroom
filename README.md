@@ -27,6 +27,9 @@ You're encouraged to setup a `virtualenv` to work in prior to configuring the de
 
        make db_setup;
 
-3. Run the Server
+3. Run the tests
+       ./manage.py tests
+
+4. Run the Server
 
        ./manage.py runserver
