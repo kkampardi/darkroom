@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 # custom apps
 INSTALLED_APPS += [
     'uploads',
+    'user',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
